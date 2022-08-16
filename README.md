@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/JeshrunSamuel/Frontend-Mentor-Order-summary-card](https://github.com/JeshrunSamuel/Frontend-Mentor-Order-summary-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jeshrunsamuel.github.io/Frontend-Mentor-Order-summary-card/](https://jeshrunsamuel.github.io/Frontend-Mentor-Order-summary-card/)
 
 ## My process
 
