@@ -10,8 +10,8 @@ p {
 }
 
 .container {
-  width: 360px;
-  min-width: 360px;
+  width: 355px;
+  min-width: 350px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -92,6 +92,11 @@ p {
   font-size: 13px;
 }
 
+.plan-container p a:hover {
+  text-decoration: none;
+  color: #655dbb;
+}
+
 button {
   width: 90%;
   padding: 13px;
@@ -111,10 +116,18 @@ button a {
   color: white;
 }
 
+button:hover {
+  background-color: #655dbb;
+}
+
 p a {
   text-decoration: none;
   color: #7280a7;
   font-weight: 700;
   font-size: 14px;
+}
+
+p a:hover {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

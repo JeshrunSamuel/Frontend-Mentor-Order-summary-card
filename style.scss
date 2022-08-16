@@ -11,8 +11,8 @@ p {
     font-size: 16px;
 }
 .container {
-    width: 360px;
-    min-width: 360px;
+    width: 355px;
+    min-width: 350px;
     height: fit-content;
     background-color: white;
     text-align: center;
@@ -70,13 +70,19 @@ p {
         }
     }
 
-    p a {
-        text-decoration: underline;
-        position: inherit;
-        left: 100px;
-        color: hsl(245, 75%, 52%);
-        font-weight: 700;
-        font-size: 13px;
+    p {
+        a{
+            text-decoration: underline;
+            position: inherit;
+            left: 100px;
+            color: hsl(245, 75%, 52%);
+            font-weight: 700;
+            font-size: 13px;
+        }
+        a:hover {
+            text-decoration: none;
+            color: hsl(245, 41%, 55%);
+        }
     }
 
 }
@@ -101,9 +107,19 @@ button {
     }
 }
 
-p a {
-    text-decoration: none;
-    color: hsl(224, 23%, 55%);
-    font-weight: 700;
-    font-size: 14px;
+button:hover {
+    background-color: hsl(245, 41%, 55%);
+}
+
+p {
+   a{
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+        font-weight: 700;
+        font-size: 14px;
+   }
+
+   a:hover {
+    color: black;
+   }
 }
