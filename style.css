@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 body {
   font-family: 'Red Hat Display', sans-serif;
-  background: url("images/pattern-background-desktop.svg") no-repeat;
+  background: url("images/pattern-background-desktop.svg") repeat-x;
   background-color: #e0e8ff;
 }
 
@@ -10,12 +10,19 @@ p {
 }
 
 .container {
-  width: 375px;
-  min-width: 370px;
+  width: 360px;
+  min-width: 360px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: white;
   text-align: center;
   border-radius: 15px;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .container img.hero-img {
@@ -24,10 +31,25 @@ p {
 }
 
 .container .second-container {
-  padding: 0 20px 0;
+  padding: 0 20px 20px;
+}
+
+.container h1 {
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.container p.details {
+  font-size: 14px;
+  color: #7280a7;
+  margin-bottom: 10px;
+  line-height: 23px;
 }
 
 .plan-container {
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,9 +57,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 5px;
+  gap: 12px;
   padding: 15px;
-  background-color: aquamarine;
+  margin: auto;
+  background-color: #f5f7ff;
 }
 
 .plan-container .plan {
@@ -51,15 +74,47 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .plan-container .plan p {
-  margin: 0;
+  margin: 2px;
+  font-size: 15px;
 }
 
 .plan-container p a {
-  text-decoration: none;
-  position: relative;
+  text-decoration: underline;
+  position: inherit;
   left: 100px;
+  color: #3829e0;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+button {
+  width: 90%;
+  padding: 13px;
+  border: none;
+  background-color: #3829e0;
+  border-radius: 10px;
+  margin: 17px 0 10px;
+  -webkit-box-shadow: 0 7px 17px 2px rgba(31, 47, 86, 0.377);
+          box-shadow: 0 7px 17px 2px rgba(31, 47, 86, 0.377);
+}
+
+button a {
+  font-size: 14px;
+  font-weight: 900;
+  font-family: 'Red Hat Display', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+p a {
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

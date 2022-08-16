@@ -2,19 +2,25 @@
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background: url('images/pattern-background-desktop.svg') no-repeat;
+    background: url('images/pattern-background-desktop.svg') repeat-x;
     background-color: hsl(225, 100%, 94%);
+    
 }
+
 p {
     font-size: 16px;
 }
 .container {
-    width: 375px;
-    min-width: 370px;
+    width: 360px;
+    min-width: 360px;
+    height: fit-content;
     background-color: white;
     text-align: center;
     border-radius: 15px;
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
     img.hero-img {
         width: 100%;
@@ -22,33 +28,82 @@ p {
     }
 
     .second-container {
-        padding: 0 20px 0;
+        padding: 0 20px 20px;
+    }
+
+    h1 {
+        font-size: x-large;
+        font-weight: 900;
+    }
+
+    p.details {
+        font-size: 14px;
+        color: hsl(224, 23%, 55%);
+        margin-bottom: 10px;
+        line-height: 23px;
     }
 
 }
 
 .plan-container {
+    width: 90%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 12px;
     padding: 15px;
-    background-color: aquamarine;
+    margin: auto;
+    background-color: hsl(225, 100%, 98%);
+    
 
 
     .plan {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+        border-radius: 10px;
 
         p {
-            margin: 0;
+            margin: 2px;
+            font-size: 15px;
         }
     }
 
     p a {
-        text-decoration: none;
-        position: relative;
+        text-decoration: underline;
+        position: inherit;
         left: 100px;
+        color: hsl(245, 75%, 52%);
+        font-weight: 700;
+        font-size: 13px;
     }
 
+}
+
+button {
+    
+    width: 90%;
+    padding: 13px;
+    border: none;
+    background-color:  hsl(245, 75%, 52%);
+    border-radius: 10px;
+    margin: 17px 0 10px;
+    box-shadow: 0 7px 17px 2px hsla(223, 47%, 23%, 0.377);
+
+    a {
+        font-size: 14px;
+        font-weight: 900;
+        font-family: 'Red Hat Display', sans-serif;
+        text-decoration: none;
+        color: white;
+
+    }
+}
+
+p a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 14px;
 }
