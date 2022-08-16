@@ -26,3 +26,29 @@ p {
     }
 
 }
+
+.plan-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 15px;
+    background-color: aquamarine;
+
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    p a {
+        text-decoration: none;
+        position: relative;
+        left: 100px;
+    }
+
+}

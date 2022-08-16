@@ -26,4 +26,40 @@ p {
 .container .second-container {
   padding: 0 20px 0;
 }
+
+.plan-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  padding: 15px;
+  background-color: aquamarine;
+}
+
+.plan-container .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.plan-container .plan p {
+  margin: 0;
+}
+
+.plan-container p a {
+  text-decoration: none;
+  position: relative;
+  left: 100px;
+}
 /*# sourceMappingURL=style.css.map */
