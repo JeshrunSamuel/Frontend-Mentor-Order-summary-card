@@ -10,7 +10,7 @@ p {
 }
 
 .container {
-  width: 355px;
+  width: 375px;
   min-width: 350px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -37,6 +37,7 @@ p {
 .container h1 {
   font-size: x-large;
   font-weight: 900;
+  color: #1f2f56;
 }
 
 .container p.details {
@@ -81,6 +82,7 @@ p {
 .plan-container .plan p {
   margin: 2px;
   font-size: 15px;
+  color: #1f2f56;
 }
 
 .plan-container p a {
